@@ -6,123 +6,222 @@
 <title>Oferta Especial</title>
 
 <style>
-
 body{
-font-family: Arial, sans-serif;
-background:#0b0d10;
-color:white;
-text-align:center;
-padding:40px;
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#090b0d;
+  color:white;
+  text-align:center;
+  padding:24px 16px 40px;
 }
 
 .container{
-max-width:600px;
-margin:auto;
+  max-width:420px;
+  margin:auto;
+}
+
+.alert{
+  display:inline-block;
+  background:#1a1410;
+  color:#ffd38a;
+  border:1px solid rgba(255,211,138,.25);
+  padding:10px 16px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:18px;
 }
 
 h1{
-font-size:32px;
-color:#f5f2ea;
+  font-size:42px;
+  line-height:1.05;
+  margin:0 0 10px;
+  color:#ffffff;
+  font-weight:900;
+  text-transform:uppercase;
 }
 
 h2{
-color:#d9b36e;
+  font-size:18px;
+  line-height:1.4;
+  margin:0 0 18px;
+  color:#d9b36e;
+  font-weight:800;
+}
+
+.main-title{
+  font-size:34px;
+  line-height:1.15;
+  margin:8px 0 18px;
+  color:#f5d08a;
+  font-weight:900;
 }
 
 p{
-font-size:18px;
-line-height:1.6;
+  font-size:20px;
+  line-height:1.7;
+  color:#f3f3f3;
+  margin:0 0 18px;
+}
+
+.highlight{
+  color:#ffffff;
+  font-weight:900;
 }
 
 img{
-width:100%;
-border-radius:10px;
-margin:20px 0;
+  width:100%;
+  border-radius:18px;
+  margin:22px 0 18px;
+  display:block;
+  box-shadow:0 14px 30px rgba(0,0,0,.35);
+}
+
+.offer-title{
+  font-size:38px;
+  line-height:1.1;
+  color:#d9b36e;
+  font-weight:900;
+  margin:0 0 14px;
+}
+
+.offer-text{
+  font-size:22px;
+  line-height:1.65;
+  color:#f4f4f4;
 }
 
 .benefits{
-text-align:left;
-margin:20px auto;
-max-width:400px;
+  text-align:left;
+  margin:22px auto;
+  padding:18px;
+  max-width:100%;
+  background:#11161c;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
 }
 
 .benefits li{
-margin:10px 0;
+  margin:12px 0;
+  font-size:21px;
+  line-height:1.5;
+  color:#ffffff;
 }
 
-.price{
-font-size:28px;
-color:#35b06f;
-margin:20px 0;
+.price-box{
+  background:linear-gradient(180deg,#151b21,#10151a);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:18px 14px;
+  margin:18px 0 22px;
 }
 
+.old-price{
+  font-size:22px;
+  color:#d9b3b3;
+  text-decoration:line-through;
+  margin-bottom:8px;
+}
+
+.new-price{
+  font-size:36px;
+  color:#35b06f;
+  font-weight:900;
+}
+
+.note{
+  font-size:16px;
+  color:#d8d8d8;
+  margin-top:8px;
+}
+
+cakto-upsell-accept::part(button){
+  width:100%;
+  margin-top:10px;
+  background:#0f7865;
+  color:#ffffff;
+  font-size:20px;
+  font-weight:800;
+  border-radius:14px;
+  padding:18px 14px;
+}
+
+cakto-upsell-reject::part(button){
+  width:100%;
+  margin-top:12px;
+  background:#2a2f36;
+  color:#ffffff;
+  font-size:16px;
+  border-radius:12px;
+  padding:14px 12px;
+}
+
+@media (max-width:400px){
+  h1{font-size:36px;}
+  .main-title{font-size:30px;}
+  .offer-title{font-size:32px;}
+  p,.offer-text,.benefits li{font-size:19px;}
+}
 </style>
-
 </head>
 
 <body>
-
 <div class="container">
 
-<h1>⚠ ESPERE!</h1>
+<div class="alert">⚠ Oferta única antes de liberar seu acesso</div>
 
-<h2>Sua compra ainda não terminou</h2>
+<h1>ESPERE!</h1>
+<div class="main-title">Sua compra ainda não terminou</div>
 
 <p>
-Antes de liberar seu acesso aos <b>12.000 sermões</b>,  
+Antes de liberar seu acesso aos <span class="highlight">12.000 sermões</span>,
 quero te oferecer algo que pode transformar completamente a forma como você prega.
 </p>
 
-<img src="https://chat.openai.com/backend-api/files/asset/459">
+<img src="codigo-pregacao.jpg" alt="Código da Pregação Poderosa">
 
-<h2>🔥 Código da Pregação Poderosa</h2>
+<div class="offer-title">🔥 Código da Pregação Poderosa</div>
 
-<p>
-Descubra princípios que ajudam pregadores a preparar mensagens mais fortes, organizadas e impactantes.
+<p class="offer-text">
+Descubra princípios que ajudam pregadores a preparar mensagens mais fortes,
+organizadas e impactantes.
 </p>
 
 <div class="benefits">
-
-<ul>
-<li>✔ Estrutura de sermões poderosos</li>
-<li>✔ Como prender a atenção da igreja</li>
-<li>✔ Como pregar com autoridade</li>
-<li>✔ Como preparar mensagens mais profundas</li>
-</ul>
-
+  <ul>
+    <li>✔ Estrutura de sermões poderosos</li>
+    <li>✔ Como prender a atenção da igreja</li>
+    <li>✔ Como pregar com autoridade</li>
+    <li>✔ Como preparar mensagens mais profundas</li>
+  </ul>
 </div>
 
-<div class="price">
-Oferta especial: apenas R$17,90
+<div class="price-box">
+  <div class="old-price">De R$47,00</div>
+  <div class="new-price">Por apenas R$17,90</div>
+  <div class="note">Oferta disponível somente agora</div>
 </div>
 
 <cakto-upsell-buttons>
+  <cakto-upsell-accept
+    bg-color="#0f7865"
+    text-color="#ffffff"
+    upsell-accept-url="members_area"
+    offer-id="b479ohu"
+    app-base-url="https://app.cakto.com.br"
+    offer-type="upsell"
+    upsell-reject-url="members_area">
+    SIM, QUERO APROVEITAR A OFERTA
+  </cakto-upsell-accept>
 
-<cakto-upsell-accept
-bg-color="#0f7865"
-text-color="#ffffff"
-upsell-accept-url="members_area"
-offer-id="b479ohu"
-app-base-url="https://app.cakto.com.br"
-offer-type="upsell"
-upsell-reject-url="members_area">
-
-SIM, QUERO APROVEITAR A OFERTA
-
-</cakto-upsell-accept>
-
-<cakto-upsell-reject
-upsell-reject-url="members_area">
-
-Não, quero continuar
-
-</cakto-upsell-reject>
-
+  <cakto-upsell-reject
+    upsell-reject-url="members_area">
+    Não, quero continuar
+  </cakto-upsell-reject>
 </cakto-upsell-buttons>
 
 <script src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
 
 </div>
-
 </body>
 </html>
