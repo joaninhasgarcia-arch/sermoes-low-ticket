@@ -44,9 +44,37 @@ text-transform:uppercase;
 .main-title{
 font-size:34px;
 line-height:1.15;
-margin:8px 0 18px;
+margin:8px 0 14px;
 color:#f5d08a;
 font-weight:900;
+}
+
+.top-price-box{
+background:linear-gradient(180deg,#151b21,#10151a);
+border:1px solid rgba(255,255,255,.06);
+border-radius:18px;
+padding:16px 14px;
+margin:0 0 18px;
+}
+
+.top-old-price{
+font-size:20px;
+color:#d9b3b3;
+text-decoration:line-through;
+margin-bottom:6px;
+}
+
+.top-new-price{
+font-size:38px;
+color:#35b06f;
+font-weight:900;
+line-height:1;
+}
+
+.top-note{
+font-size:14px;
+color:#d8d8d8;
+margin-top:8px;
 }
 
 p{
@@ -159,6 +187,7 @@ padding:14px 12px;
 h1{font-size:36px;}
 .main-title{font-size:30px;}
 .offer-title{font-size:32px;}
+.top-new-price{font-size:34px;}
 p,.offer-text,.benefits li{font-size:19px;}
 }
 </style>
@@ -174,6 +203,12 @@ p,.offer-text,.benefits li{font-size:19px;}
 
 <div class="main-title">
 Talvez o valor tenha sido o único motivo de você não aceitar
+</div>
+
+<div class="top-price-box">
+  <div class="top-old-price">De R$17,90</div>
+  <div class="top-new-price">Por apenas R$9,90</div>
+  <div class="top-note">Condição especial liberada somente agora</div>
 </div>
 
 <p>
@@ -202,7 +237,6 @@ mensagens mais fortes, organizadas e impactantes.
 </div>
 
 <div class="price-box">
-
 <div class="old-price">
 De R$17,90
 </div>
@@ -218,9 +252,7 @@ Condição especial liberada somente nesta página
 <div class="extra-note">
 Se sair desta página, essa oferta pode não aparecer novamente.
 </div>
-
 </div>
-
 
 <cakto-upsell-buttons>
 
@@ -245,7 +277,6 @@ Não, quero continuar sem isso
 </cakto-upsell-reject>
 
 </cakto-upsell-buttons>
-
 
 <script src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
 
